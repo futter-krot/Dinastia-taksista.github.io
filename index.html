@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/game.css">
+
+    <title>PWS A6 HW</title>
+
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>10 квадратов</h1>
+
+      <!-- FIXME: сейчас тут не все слоты, надо добавить нужных -->
+      <div class="row">
+        <div class="col game-field align-text-bottom d-none" id="slot-11"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-12"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-13"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-14"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-15"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-16"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field align-text-bottom d-none" id="slot-21"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-22"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-23"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-24"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-25"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-26"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field align-text-bottom d-none" id="slot-31"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-32"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-33"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-34"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-35"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-36"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field align-text-bottom d-none" id="slot-41"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-42"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-43"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-44"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-45"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-46"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field align-text-bottom d-none" id="slot-61"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-62"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-63"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-64"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-65"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-66"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field align-text-bottom d-none" id="slot-71"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-72"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-73"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-74"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-75"></div>
+        <div class="col game-field align-text-bottom d-none" id="slot-76"></div>
+      </div>
+      <div id="win-message" class="d-none">
+        <!-- TODO: можно добавить красные квадратики с отрицательным весом и делать счёт попаданий в конце как разницу очков за попадание минус штрафные -->
+        <h2>Вы нашли 10 зелёных квадратов за <span id="total-time-played"></span> секунд <br> Баллы с учетом промахов:<span id="total-fails"></span></h2>
+      </div>
+      <div class="row">
+        <button id="button-reload" class="btn btn-primary d-none">Играть заново</button>
+        <button id="start-button" style="margin-left: 30px;" class="btn btn-primary">Начать играть</button>
+      </div>
+    </div>
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/game.js"></script>
+  </body>
+</html>
